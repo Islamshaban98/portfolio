@@ -6,9 +6,15 @@ const DesktopIcons = () => {
   const classes = useStyles();
   return (
     <div className={classes.desktopIcons}>
-      <img src={Email} alt="" />
-      <img src={gitHup} alt="" />
-      <img src={LinkedIn} alt="" />
+      <a href="https://islamshaban998@gmail.com">
+        <img src={Email} alt="" />
+      </a>
+      <a href="https://github.com/Islamshaban98">
+        <img src={gitHup} alt="" />
+      </a>
+      <a href="https://www.linkedin.com/in/islam-shaban-b5082b189/">
+        <img src={LinkedIn} alt="" />
+      </a>
     </div>
   );
 };

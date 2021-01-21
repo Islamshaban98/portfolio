@@ -1,7 +1,16 @@
-import { Drawer, IconButton, MenuItem, Toolbar } from "@material-ui/core";
+import {
+  AppBar,
+  Drawer,
+  IconButton,
+  MenuItem,
+  Toolbar,
+} from "@material-ui/core";
 import React, { useState } from "react";
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import useStyles from "./Nav.style";
+import { whiteLogo } from "../../img";
 
 const headersData = [
   {
@@ -16,8 +25,14 @@ const headersData = [
     label: "Portfolio",
     href: "/Portfolio",
   },
+  {
+    label: "Contact Us",
+    herf: "/contact",
+  },
 ];
 const MobileNav = () => {
+  const classes = useStyles();
+
   const [state, setState] = useState({
     drawerOpen: false,
   });
@@ -37,7 +52,7 @@ const MobileNav = () => {
             onClick: handleDrawerOpen,
           }}
         >
-          <MenuIcon />
+          <MenuIcon fontSize="large" />
         </IconButton>
 
         <Drawer
@@ -46,8 +61,23 @@ const MobileNav = () => {
             open: drawerOpen,
             onClose: handleDrawerClose,
           }}
+          classes={{ paper: classes.paper }}
         >
-          <div>{getDrawerChoices()}</div>
+          <AppBar className={classes.topBar}>
+            <div className={classes.whiteLogo}>
+              <img src={whiteLogo} alt="" />
+            </div>
+            <IconButton
+              {...{
+                edge: "end",
+                color: "inherit",
+                onClick: handleDrawerClose,
+              }}
+            >
+              <CloseIcon fontSize="large" />
+            </IconButton>
+          </AppBar>
+          <div className={classes.drawerChoices}>{getDrawerChoices()}</div>
         </Drawer>
       </Toolbar>
     </Router>
@@ -55,6 +85,7 @@ const MobileNav = () => {
 };
 const getDrawerChoices = () => {
   return headersData.map(({ label, href }) => {
+    const classes = useStyles();
     return (
       <Link
         {...{
@@ -65,7 +96,9 @@ const getDrawerChoices = () => {
           key: label,
         }}
       >
-        <MenuItem>{label}</MenuItem>
+        <div className={classes.last}>
+          <MenuItem classes={{ gutters: classes.gutters }}>{label}</MenuItem>
+        </div>
       </Link>
     );
   });

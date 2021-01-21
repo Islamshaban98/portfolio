@@ -1,7 +1,8 @@
 
-@media (min-width: 992px)
+@media (min-width: 960px)
 {
     .MuiTab-root {
      min-width: 120px !important;
     }
+
 }

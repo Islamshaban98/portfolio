@@ -11,7 +11,7 @@ const Icons = () => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 900
+      return window.innerWidth < 960
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };

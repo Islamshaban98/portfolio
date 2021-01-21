@@ -1,9 +1,10 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { person } from "../../img/index";
 import useStyles from "./Header.style";
 import Nav from "../Nav/Nav";
 import Icons from "../socialIcons/Icon";
+import Typography from "../Typography/Typography";
 
 const Header = () => {
   const classes = useStyles();
@@ -13,21 +14,7 @@ const Header = () => {
       <Nav />
       <Grid container className={classes.rowDiv}>
         <Grid item sm={12} md={6}>
-          <div className={classes.heading}>
-            <Typography variant="h4" component="h2" className={classes.title}>
-              Hi, I am
-            </Typography>
-            <Typography variant="h3" component="h2" className={classes.name}>
-              Tomasz Gajda
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              component="h2"
-              className={classes.txt}
-            >
-              Front-end Developer / UI Designer
-            </Typography>
-          </div>
+          <Typography />
           <Icons />
         </Grid>
         <Grid item sm={12} md={6}>

@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => {
       width: "100%",
       paddingTop: "3%",
       justifyContent: "space-between",
-      position: "sticky",
       top: "0",
       boxShadow: "none",
     },
@@ -17,8 +16,8 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: theme.palette.secondary.main,
       color: theme.palette.primary.main,
       borderRadius: "30px",
-      width: "auto",
-      fontSize: "14px",
+      marginLeft: "13px",
+      fontSize: "12px",
     },
     tabsDiv: {
       display: "flex",
@@ -30,6 +29,37 @@ const useStyles = makeStyles((theme) => {
     },
     logo: {
       paddingLeft: "10%",
+    },
+    topBar: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-between",
+      paddingLeft: "20px",
+      paddingRight: "20px",
+      borderBottom: "1px solid #fff",
+    },
+    whiteLogo: {
+      paddingTop: "10px",
+    },
+    drawerChoices: {
+      backgroundColor: " rgba(0, 0, 0, 0.4)",
+      marginTop: "59px",
+      textAlign: "center",
+    },
+    paper: {
+      backgroundColor: "transparent",
+    },
+    gutters: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      color: "#fff",
+      padding: "10px",
+      "&:hover": {
+        backgroundColor: "#fff",
+        color: "#000",
+      },
     },
   };
 });

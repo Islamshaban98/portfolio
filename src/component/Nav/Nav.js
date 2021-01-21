@@ -17,7 +17,7 @@ const Nav = () => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 900
+      return window.innerWidth < 960
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }));
     };
@@ -32,7 +32,8 @@ const Nav = () => {
       style={{
         backgroundColor: trigger ? "#000" : "transparent",
         paddingTop: trigger ? "1%" : "3%",
-        paddingRight: trigger ? "1%" : "3%",
+        paddingRight: trigger ? null : "3%",
+        justifyContent: mobileView ? "flex-end" : null,
       }}
     >
       {mobileView ? <MobileNav /> : <DesktopNav />}

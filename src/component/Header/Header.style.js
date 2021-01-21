@@ -6,21 +6,26 @@ const useStyles = makeStyles((theme) => {
     title: {
       paddingBottom: "5%",
       [theme.breakpoints.down("sm")]: {
-        // fontSize: "20px",
+        fontSize: "25px",
       },
     },
     rowDiv: {
       paddingLeft: "10%",
       paddingRight: "10%",
-      paddingTop: "5%",
+      paddingTop: "15%",
       [theme.breakpoints.down("sm")]: {
         justifyContent: "center",
         position: "relative",
-        top: "20%",
+        top: "30%",
       },
     },
     txt: {
       color: "#919191",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "25px",
+        color: "#fff",
+        fontWeight: "bold",
+      },
     },
     heroSection: {
       [theme.breakpoints.down("sm")]: {
@@ -55,6 +60,11 @@ const useStyles = makeStyles((theme) => {
         color: "#fff",
         textAlign: "center",
         margin: "0 auto",
+      },
+    },
+    name: {
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "20px",
       },
     },
   };
