@@ -10,3 +10,5 @@ export { default as mailFilled } from "./mail-filled.png";
 export { default as linkedFilled } from "./linked-filled.png";
 export { default as separatorWhite } from "./separatorWhite.png";
 export { default as whiteLogo } from "./white-logo.png";
+export { default as LogoIT } from "./Logo ITB.png";
+export { default as ITBerries } from "./ITBerries.png";
