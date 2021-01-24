@@ -26,11 +26,11 @@ const ItBerriers = () => {
           tempor, accumsan nec eros.{" "}
         </Typography>
         <Button color="secondary" className={classes.button}>
-          Secondary
+          READ MORE
         </Button>
       </div>
       <div className={classes.LogoDiv}>
-        <img src={LogoIT} alt="" className={classes.logo} />
+        <img src={LogoIT} alt="" className={classes.itlogo} />
       </div>
     </div>
   );

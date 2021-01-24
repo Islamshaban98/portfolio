@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: "5%",
     paddingRight: "20px",
     backgroundColor: "#1D1D1D",
+    height: "350px",
     [theme.breakpoints.down("sm")]: {
       backgroundImage: `url(${ITBerries})`,
       height: "500px",
@@ -28,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
   },
   txt: {
     paddingTop: "5%",
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: "15%",
+    },
   },
   title: {
     [theme.breakpoints.down("sm")]: {
@@ -48,8 +52,21 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "0px",
     marginTop: "20px",
   },
-  logo: {
-    width: "100%",
+  itlogo: {
+    width: "124%",
+    position: "relative",
+    top: " -154px",
+    height: "168%",
+    left: "-19px",
+    "@media (max-width:1400px)": {
+      left: "-3px",
+    },
+    "@media (max-width:1024px)": {
+      left: " -8px",
+      width: "123%",
+      height: "122%",
+      top: "-74px",
+    },
   },
 }));
 export default useStyles;
