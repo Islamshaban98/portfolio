@@ -1,3 +1,4 @@
+import Body from "./component/Body/Body";
 import Header from "./component/Header/Header";
 import ItBerriers from "./component/ItB/ItBerriers";
 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <ItBerriers />
+      <Body />
     </div>
   );
 }
