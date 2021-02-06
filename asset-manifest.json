@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4cd84fb0.chunk.css",
+    "main.js": "/portfolio/static/js/main.2ed4294f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2ed4294f.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
+    "static/js/2.6b4c1cd4.chunk.js": "/portfolio/static/js/2.6b4c1cd4.chunk.js",
+    "static/js/2.6b4c1cd4.chunk.js.map": "/portfolio/static/js/2.6b4c1cd4.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.4cd84fb0.chunk.css.map": "/portfolio/static/css/main.4cd84fb0.chunk.css.map",
+    "static/js/2.6b4c1cd4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6b4c1cd4.chunk.js.LICENSE.txt",
+    "static/media/Background.07ae034f.png": "/portfolio/static/media/Background.07ae034f.png",
+    "static/media/ITBerries.d2d8c1e7.png": "/portfolio/static/media/ITBerries.d2d8c1e7.png",
+    "static/media/Logo ITB.3df07b7f.png": "/portfolio/static/media/Logo ITB.3df07b7f.png",
+    "static/media/logo.2c49d929.svg": "/portfolio/static/media/logo.2c49d929.svg",
+    "static/media/person.d48a4ebd.png": "/portfolio/static/media/person.d48a4ebd.png",
+    "static/media/white&black.fe2720b3.png": "/portfolio/static/media/white&black.fe2720b3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8fed2963.js",
+    "static/js/2.6b4c1cd4.chunk.js",
+    "static/css/main.4cd84fb0.chunk.css",
+    "static/js/main.2ed4294f.chunk.js"
+  ]
+}
