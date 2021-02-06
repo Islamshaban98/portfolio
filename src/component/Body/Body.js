@@ -1,6 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import React from "react";
 import AboutMe from "../AboutMe/AboutMe";
+import Skills from "../Skills/Skills";
 
 const useStyles = makeStyles(() => {
   return {
@@ -15,6 +16,7 @@ const Body = () => {
   return (
     <div className={classes.bodyDiv}>
       <AboutMe />
+      <Skills />
     </div>
   );
 };

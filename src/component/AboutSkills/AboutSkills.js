@@ -18,6 +18,7 @@ const useStyles = makeStyles(() => {
     title: {
       fontSize: "16px",
       fontWeight: "bold",
+      letterSpacing: "0.18538em",
     },
     Typography: {
       paddingTop: "35px",

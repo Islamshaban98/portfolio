@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => {
         paddingTop: "5%",
       },
     },
+    devGrid: {
+      [theme.breakpoints.down("md")]: {
+        paddingLeft: "0px",
+      },
+      paddingLeft: "15px",
+    },
     borderButton: {
       marginTop: "3%",
       paddingLeft: "27px",

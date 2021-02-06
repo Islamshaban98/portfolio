@@ -24,9 +24,9 @@ const DesktopNav = () => {
           indicatorColor="secondary"
           textColor={theme.palette.secondary.main}
         >
-          <Tab label="About me" />
-          <Tab label="Skills" />
-          <Tab label="Portfolio" />
+          <Tab label="About me" className={classes.tabsFont} />
+          <Tab label="Skills" className={classes.tabsFont} />
+          <Tab label="Portfolio" className={classes.tabsFont} />
         </Tabs>
         <Button className={classes.contactBtn} variant="contained">
           CONTACT ME

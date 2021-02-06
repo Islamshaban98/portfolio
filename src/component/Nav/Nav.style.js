@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => {
       borderRadius: "30px",
       marginLeft: "13px",
       fontSize: "12px",
+      fontWeight: "bold",
     },
     tabsDiv: {
       display: "flex",
@@ -60,6 +61,9 @@ const useStyles = makeStyles((theme) => {
         backgroundColor: "#fff",
         color: "#000",
       },
+    },
+    tabsFont: {
+      fontWeight: "bold",
     },
   };
 });

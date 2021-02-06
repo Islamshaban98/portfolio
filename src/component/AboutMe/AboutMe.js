@@ -38,16 +38,16 @@ const AboutMe = () => {
       >
         <Grid item md={6} sm={12}>
           <AboutSkills
-            title="Design"
+            title="DESIGN"
             skillsImg={Design}
             parag="I can design the website based on your needs and suggestions. 
             I can also create it from scratch by consulting with you during work.
      "
           />
         </Grid>
-        <Grid item md={6} sm={12}>
+        <Grid item md={6} sm={12} className={classes.devGrid}>
           <AboutSkills
-            title="Development"
+            title="DEVELOPMENT"
             skillsImg={Development}
             parag="I can design the website based on your needs and suggestions. 
             I can also create it from scratch by consulting with you during work.
@@ -56,7 +56,7 @@ const AboutMe = () => {
         </Grid>
         <Grid item sm={12} md={6} className={classes.lastGrid}>
           <AboutSkills
-            title="Maintenance"
+            title="MAINTENANCE"
             skillsImg={Maintenance}
             parag="I can design the website based on your needs and suggestions. 
             I can also create it from scratch by consulting with you during work.
@@ -64,6 +64,10 @@ const AboutMe = () => {
           />
         </Grid>
       </Grid>
+      <TabButton text="SKILLS" className={classes.TabButton} />
+      <div className={classes.separator}>
+        <img src={separatorBlack} alt="" />
+      </div>
     </div>
   );
 };
