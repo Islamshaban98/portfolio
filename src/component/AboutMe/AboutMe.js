@@ -42,7 +42,7 @@ const AboutMe = () => {
             skillsImg={Design}
             parag="I can design the website based on your needs and suggestions. 
             I can also create it from scratch by consulting with you during work.
-     "
+            "
           />
         </Grid>
         <Grid item md={6} sm={12} className={classes.devGrid}>
@@ -60,14 +60,15 @@ const AboutMe = () => {
             skillsImg={Maintenance}
             parag="I can design the website based on your needs and suggestions. 
             I can also create it from scratch by consulting with you during work.
-          "
+            "
           />
         </Grid>
       </Grid>
-      <TabButton text="SKILLS" className={classes.TabButton} />
-      <div className={classes.separator}>
+
+      <div className={classes.separator2}>
         <img src={separatorBlack} alt="" />
       </div>
+      <TabButton text="SKILLS" className={classes.TabButton} />
     </div>
   );
 };

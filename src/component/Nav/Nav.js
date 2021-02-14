@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import { AppBar } from "@material-ui/core";
 import useStyles from "./Nav.style";
 import MobileNav from "./MobileNav";
@@ -7,13 +6,13 @@ import DesktopNav from "./DesktopNav";
 
 const Nav = () => {
   const classes = useStyles();
-  const trigger = useScrollTrigger();
 
   const [state, setState] = useState({
     mobileView: false,
   });
 
   const { mobileView } = state;
+  const [navBackground, setNavBackground] = useState("appBarTransparent");
 
   useEffect(() => {
     const setResponsiveness = () => {
@@ -24,15 +23,25 @@ const Nav = () => {
     setResponsiveness();
     window.addEventListener("resize", () => setResponsiveness());
   }, []);
+  const navRef = React.useRef();
+  navRef.current = navBackground;
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 100;
+      show
+        ? setNavBackground("appBarSolid")
+        : setNavBackground("appBarTransparent");
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <AppBar
-      className={classes.root}
-      elevation={trigger}
+      className={`${classes.root} ${classes[navRef.current]}`}
       style={{
-        backgroundColor: trigger ? "#000" : "transparent",
-        paddingTop: trigger ? "1%" : "3%",
-        paddingRight: trigger ? null : "3%",
         justifyContent: mobileView ? "flex-end" : null,
       }}
     >

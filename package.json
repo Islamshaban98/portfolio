@@ -1,7 +1,7 @@
 {
-  "homepage": "http://Islamshaban98.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "http://islamshaban98.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
@@ -21,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
