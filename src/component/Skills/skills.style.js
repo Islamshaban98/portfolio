@@ -13,12 +13,18 @@ const useStyles = makeStyles((theme) => ({
   },
   root: {
     flexGrow: 1,
+    paddingTop: "3%",
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
     alignSelf: "center",
+  },
+  lastGrid: {
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
   },
 }));
 export default useStyles;

@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => {
       display: "flex",
       flexDirection: "row",
       alignSelf: "flex-end",
-      [theme.breakpoints.up("lg")]: {
-        marginRight: "10%",
+      [theme.breakpoints.up("md")]: {
+        marginRight: "2%",
       },
     },
     logo: {
@@ -57,13 +57,20 @@ const useStyles = makeStyles((theme) => {
       alignItems: "center",
       color: "#fff",
       padding: "10px",
-      "&:hover": {
-        backgroundColor: "#fff",
-        color: "#000",
-      },
+      "&.MuiListItem-button:hover": { backgroundColor: "#fff", color: "#000" },
     },
     tabsFont: {
       fontWeight: "bold",
+    },
+    appBarTransparent: {
+      backgroundColor: "transparent",
+      paddingTop: "3%",
+      paddingRight: "3%",
+    },
+    appBarSolid: {
+      backgroundColor: "#000",
+      paddingTop: "1%",
+      paddingBottom: "0.5%",
     },
   };
 });

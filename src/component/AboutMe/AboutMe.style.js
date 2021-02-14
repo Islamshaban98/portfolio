@@ -24,21 +24,22 @@ const useStyles = makeStyles((theme) => {
         paddingTop: "5%",
       },
     },
-    devGrid: {
-      [theme.breakpoints.down("md")]: {
-        paddingLeft: "0px",
-      },
-      paddingLeft: "15px",
-    },
+    devGrid: {},
     borderButton: {
       marginTop: "3%",
       paddingLeft: "27px",
       paddingRight: "27px",
     },
     separator: {
-      marginTop: "5%",
+      marginTop: "3%",
       [theme.breakpoints.down("xs")]: {
         paddingTop: "10%",
+      },
+    },
+    separator2: {
+      paddingBottom: "10%",
+      [theme.breakpoints.down("xs")]: {
+        paddingTop: "15%",
       },
     },
     rootGrid: {

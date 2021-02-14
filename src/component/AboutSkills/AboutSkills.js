@@ -1,10 +1,13 @@
 import { makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 
-const useStyles = makeStyles(() => {
+const useStyles = makeStyles((theme) => {
   return {
     gridDiv: {
-      paddingTop: "10%",
+      marginTop: "10%",
+      [theme.breakpoints.down("xs")]: {
+        marginTop: "10%",
+      },
     },
     imgDiv: {
       position: "relative",
@@ -19,12 +22,23 @@ const useStyles = makeStyles(() => {
       fontSize: "16px",
       fontWeight: "bold",
       letterSpacing: "0.18538em",
+      [theme.breakpoints.down("xs")]: {
+        fontSize: "14px",
+      },
     },
     Typography: {
       paddingTop: "35px",
       fontSize: "14px",
       fontWeight: "normal",
       lineHeight: "19px",
+      width: "85%",
+      [theme.breakpoints.down("md")]: {
+        width: "auto",
+      },
+      [theme.breakpoints.down("xs")]: {
+        fontSize: "12px",
+        width: "auto",
+      },
     },
   };
 });
